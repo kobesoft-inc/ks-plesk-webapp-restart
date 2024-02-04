@@ -18,3 +18,15 @@ sudo mv ks-plesk-webapp-restart /usr/local/bin
 ## 実行
 
 /usr/local/bin/ks-plesk-webapp-restart
+
+## 背景
+
+Pleskでopcacheを有効にして、deployerを使うと、最新のコードが反映されなかった。
+opcache_resetしてもクリアされない・・・。どうして・・・。
+
+どちらにしても、supervisordを使ってるなら、これもrestartしないといけないのと、
+ユーザー権限でできるようにしたかったので、このコマンドを最後に呼ぶようにした。
+
+## 注意事項
+
+他社がサーバー内でシェルが実行できる環境では、導入しないこと。
