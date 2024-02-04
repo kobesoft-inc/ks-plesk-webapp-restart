@@ -2,7 +2,7 @@
 
 ## 概要
 
-このソフトは、pleskのphp-fpm(8.0-8.3)とsupervisordを再起動します。
+このソフトは、ユーザー権限でログインしたユーザーで、pleskのphp-fpm(8.0-8.3)とsupervisordを再起動します。
 suidフラグを立てて、deployerに登録して使います。
 
 ## 導入方法
